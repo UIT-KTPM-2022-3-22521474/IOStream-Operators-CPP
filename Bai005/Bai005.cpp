@@ -13,7 +13,7 @@ public:
 
 int main()
 {
-	cout << "Problem 001 - To Vinh Tien - 22521474 - BT_OOP_W3" << endl;
+	cout << "Problem 005 - To Vinh Tien - 22521474 - BT_OOP_W3" << endl;
 	CComplexNumber cn;
 	cin >> cn;
 	cout << cn;
@@ -32,9 +32,6 @@ istream& operator >> (istream& is, CComplexNumber& cn)
 
 ostream& operator << (ostream& os, CComplexNumber& cn)
 {
-	if(cn.imaginary < 0)
-		os << "\nThe inputted complex number is: " << cn.real << " - " << -cn.imaginary << "i." << endl;
-	else
-		os << "\nThe inputted complex number is: " << cn.real << " + " << cn.imaginary << "i." << endl;
+	os << "\nThe inputted complex number is: " << cn.real << " + " << cn.imaginary << "i." << endl;
 	return os;
 }
