@@ -1,11 +1,12 @@
 #include<iostream>
+#include <iomanip>
 using namespace std;
 
 class CDynamicArr
 {
 private:
 	int n;
-	int* a;
+	int* arr;
 public:
 	friend istream& operator >> (istream&, CDynamicArr&);
 	friend ostream& operator << (ostream&, CDynamicArr&);
@@ -24,7 +25,7 @@ istream& operator >> (istream& is, CDynamicArr& arr)
 {
 	cout << "\nEnter n - size of array:	";
 	is >> arr.n;
-	arr.a = new int[arr.n];
+	arr.arr = new int[arr.n];
 	for (int i = 0; i < arr.n; i++)
 	{
 		cout << "Enter arr[" << i << "]:			";
