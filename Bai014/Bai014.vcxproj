@@ -129,6 +129,9 @@
   <ItemGroup>
     <ClCompile Include="Bai014.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CDynamicArr.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
