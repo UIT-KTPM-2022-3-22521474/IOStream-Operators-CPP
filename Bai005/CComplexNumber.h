@@ -13,7 +13,6 @@ public:
 
 istream& operator >> (istream& is, CComplexNumber& cn)
 {
-	cout << "\nEnter your 2D point:" << endl;
 	cout << "Enter the real part:				";
 	is >> cn.real;
 	cout << "Enter the imaginary part:				";
